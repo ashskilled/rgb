@@ -11,7 +11,7 @@ var score = 0;
 var scoreDisplay = document.querySelector("#scoreDisplay"); 
 var resetPressed = true; 
 
-
+// sets up data score to store in the local storage
 init();
 
 function init(){
@@ -27,7 +27,7 @@ function init(){
 	}
 	reset();
 }
-
+// user choice output for selecting easy
 function setupModeButtons(){
 	for(var i = 0; i < modeButtons.length; i++){
 		modeButtons[i].addEventListener("click", function(){
@@ -39,7 +39,7 @@ function setupModeButtons(){
 		});
 	}
 }
-
+//what happens when the user get it right, updates score or reset or asks to plahy again. 
 function setupSquares(){
 	for(var i = 0; i < squares.length; i++){
 	//add click listeners to squares
@@ -70,7 +70,7 @@ function setupSquares(){
 		});
 	}
 }
-
+// it updates color when the user get the right answer. 
 
 async function updateColorName(){
 	const regex = /\([^\)]+\)/g; 
@@ -91,7 +91,7 @@ async function updateColorName(){
 		colorDisplay.textContent = colorData.name.value + "-ish"; 
 	}
 }
-
+//resets the color to continue to play
 function reset(){
 	resetPressed = true;
 	colors = generateRandomColors(numSquares);

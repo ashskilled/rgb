@@ -72,8 +72,10 @@
         vii.  Using this documentation: https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage change the JavaScript file to use session storage instead of local storage. 
 
         viii.  What's different about the way the score is kept now? 
+         once you end the game the and end the session...You score is cleared and starts back. 
 
         ix.  When you win what happens when the title changes? 
+        
 
         x.  What does Asynchronous mean in the context of JavaScript? 
 
